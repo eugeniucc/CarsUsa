@@ -3,7 +3,74 @@
 @import "../scss/animations/hover";
 
 .header {
-  &_test {
-    @include oswald-h0;
+  background-image: url(../../img/header-bg.png);
+  background-color: $bg;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 4.7rem 0rem 12rem 0rem;
+  &_logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10.7rem;
+    &-img {
+      display: block;
+    }
+    &-link {
+      text-decoration: none;
+      color: $white;
+      @include oswald-h1;
+    }
+  }
+  &_content {
+    display: flex;
+    flex-direction: column;
+    &-title {
+      @include oswald-h0;
+      color: $white;
+      text-transform: uppercase;
+      &--h2 {
+        @include oswald-h1;
+        color: $white;
+        text-transform: uppercase;
+        padding-top: 1rem;
+      }
+    }
+    &-text {
+      @include oswald-p;
+      color: $white;
+      text-transform: uppercase;
+      padding: 3rem 0rem;
+    }
+    &-btn {
+      @include oswald-btn;
+      color: $white;
+      text-transform: uppercase;
+      cursor: pointer;
+      border: none;
+      padding: 1.5rem 5.5rem;
+      max-width: 25.2rem;
+      width: 100%;
+      background-color: $special;
+      @include btn-hover;
+    }
+    &-social {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 7rem 0rem 0rem 6.6rem;
+      position: relative;
+      &--links {
+        text-decoration: none;
+      }
+    }
+    &-img {
+      position: absolute;
+      content: "";
+      display: block;
+      max-width: 100%;
+      bottom: -28rem;
+      right: 24rem;
+    }
   }
 }
