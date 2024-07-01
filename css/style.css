@@ -1,0 +1,17 @@
+.header_test {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 7.2rem;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}/*# sourceMappingURL=style.css.map */

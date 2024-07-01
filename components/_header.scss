@@ -1,0 +1,9 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+@import "../scss/animations/hover";
+
+.header {
+  &_test {
+    @include oswald-h0;
+  }
+}

@@ -1,4 +1,17 @@
 // COMPONENTS
+@import "../components/header";
+
+// MEDIA QUERIES
+@import "../media-queries/media-header";
+
+// MIXINS
+@import "../scss/mixins/mixins";
+
+// VARIABLES
+@import "../scss/variables/variables";
+
+// ANIMATIONS
+@import "../scss/animations/hover";
 
 // HTML
 html {
@@ -8,6 +21,6 @@ html {
 
 // CONTAINER
 .container {
-  max-width: 132rem;
+  max-width: 120rem;
   margin: 0 auto;
 }
