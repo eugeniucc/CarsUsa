@@ -33,3 +33,10 @@
   font-style: normal;
   font-size: 1.8rem;
 }
+@mixin oswald-services {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2.2rem;
+}

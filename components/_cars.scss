@@ -1,0 +1,17 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+@import "../scss/repeated-components/after-stick";
+
+.cars {
+  padding-bottom: 10rem;
+  &_title {
+    position: relative;
+    max-width: 37rem;
+    @include oswald-h1;
+    @include after-stick;
+    margin-bottom: 5rem;
+    &::after {
+      right: -30%;
+    }
+  }
+}

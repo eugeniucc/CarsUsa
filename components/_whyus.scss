@@ -1,0 +1,60 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+@import "../scss/repeated-components/after-stick";
+
+.whyus {
+  padding-bottom: 10rem;
+  &_wrapper {
+    display: flex;
+    gap: 9.5rem;
+    &-element {
+      &--img {
+        display: block;
+        width: 100%;
+      }
+    }
+    &-content {
+      width: 100%;
+      &--title {
+        position: relative;
+        max-width: 20rem;
+        width: 100%;
+        margin: 0 auto;
+        @include oswald-h1;
+        @include after-stick;
+      }
+    }
+    &-info {
+      background-color: $special;
+      height: 50rem;
+      padding: 2.3rem 0rem 4.5rem 18.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      margin-top: 5rem;
+      &--number {
+        @include oswald-h1;
+      }
+      &--text {
+        @include oswald-h2;
+      }
+      &--descr {
+        @include oswald-p;
+      }
+      &--number,
+      &--text,
+      &--descr {
+        color: $white;
+        max-width: 31.5rem;
+        width: 100%;
+      }
+      &--cars,
+      &--years,
+      &--trust {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+      }
+    }
+  }
+}

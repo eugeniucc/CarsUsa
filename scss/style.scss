@@ -1,10 +1,14 @@
 // COMPONENTS
 @import "../components/header";
 @import "../components/services";
+@import "../components/whyus";
+@import "../components/cars";
 
 // MEDIA QUERIES
 @import "../media-queries/media-header";
 @import "../media-queries/media-services";
+@import "../media-queries/media-whyus";
+@import "../media-queries/media-cars";
 
 // MIXINS
 @import "../scss/mixins/mixins";
@@ -14,6 +18,16 @@
 
 // ANIMATIONS
 @import "../scss/animations/hover";
+
+// BUTTONS
+@import "../scss/btn/btn";
+
+// REPEATED COMPONENTS
+@import "../scss/repeated-components/after-stick";
+
+* {
+  box-sizing: border-box;
+}
 
 // HTML
 html {

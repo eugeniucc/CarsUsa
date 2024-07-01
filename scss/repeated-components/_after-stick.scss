@@ -1,0 +1,11 @@
+@mixin after-stick {
+  &::after {
+    position: absolute;
+    content: "";
+    width: 8rem;
+    height: 0.2rem;
+    background-color: $black;
+    top: 50%;
+    right: -50%;
+  }
+}

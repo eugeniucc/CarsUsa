@@ -1,6 +1,7 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
 @import "../scss/animations/hover";
+@import "../scss/btn/btn";
 
 .header {
   background-image: url(../../img/header-bg.png);
@@ -43,16 +44,7 @@
       padding: 3rem 0rem;
     }
     &-btn {
-      @include oswald-btn;
-      color: $white;
-      text-transform: uppercase;
-      cursor: pointer;
-      border: none;
-      padding: 1.5rem 5.5rem;
-      max-width: 25.2rem;
-      width: 100%;
-      background-color: $special;
-      @include btn-hover;
+      @include btn-components;
     }
     &-social {
       display: flex;
@@ -69,7 +61,7 @@
       content: "";
       display: block;
       max-width: 100%;
-      bottom: -28rem;
+      bottom: -46rem;
       right: 24rem;
     }
   }

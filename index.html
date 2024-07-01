@@ -50,6 +50,16 @@
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
       rel="stylesheet"
     />
+    <!-- SWIPER -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+    ></script>
+    <script defer src="./js/cars-swiper.js"></script>
     <title>AutoExpress</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/min_css/style.min.css" />
@@ -261,6 +271,76 @@
               </li>
             </ul>
           </div>
+        </div>
+        <button class="services_btn">КОНСУЛЬТАЦИЯ ЭКСПЕРТА</button>
+      </div>
+    </section>
+    <section class="whyus">
+      <div class="container">
+        <div class="whyus_wrapper">
+          <div class="whyuus_wrapper-element">
+            <img
+              class="whyuus_wrapper-element--img"
+              src="./img/whyus-car.png"
+              alt="Ford Car"
+            />
+          </div>
+          <div class="whyus_wrapper-content">
+            <h2 class="whyus_wrapper-content--title">ПОЧЕМУ МЫ?</h2>
+            <div class="whyus_wrapper-info">
+              <div class="whyus_wrapper-info--cars">
+                <p class="whyus_wrapper-info--number">650</p>
+                <p class="whyus_wrapper-info--text">
+                  успешно доставленных авто
+                </p>
+                <p class="whyus_wrapper-info--descr">
+                  большой опыт пригона автомобилей из США под ключ, все клиенты
+                  остались довольны на 100%
+                </p>
+              </div>
+              <div class="whyus_wrapper-info--years">
+                <p class="whyus_wrapper-info--number">5</p>
+                <p class="whyus_wrapper-info--text">лет на рынке Украины</p>
+                <p class="whyus_wrapper-info--descr">
+                  Работаем по всей территории Украины, работаем по договору с
+                  клиентами
+                </p>
+              </div>
+              <div class="whyus_wrapper-info--trust">
+                <p class="whyus_wrapper-info--number">100 %</p>
+                <p class="whyus_wrapper-info--text">доверия клиентов</p>
+                <p class="whyus_wrapper-info--descr">
+                  Онлайн отчетность. Вы всегда в курсе статуса подбора вашего
+                  авто. Фото и видео отчет
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cars">
+      <div class="container">
+        <h2 class="cars_title">ПРИГНАННЫЕ НАМИ АВТО</h2>
+        <div class="swiper carsSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper-cars">
+                <img src="./img/whyus-car.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-cars">
+                <img src="./img/whyus-car.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-cars">
+                <img src="./img/whyus-car.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </section>

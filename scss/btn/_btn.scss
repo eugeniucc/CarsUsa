@@ -1,0 +1,13 @@
+@mixin btn-components {
+  @include oswald-btn;
+  color: $white;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  padding: 1.5rem 5.5rem;
+  max-width: 25.3rem;
+  width: 100%;
+  background-color: $special;
+  @include btn-hover;
+  border: 0.1rem solid $special;
+}

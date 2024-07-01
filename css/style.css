@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header {
   background-image: url(../../img/header-bg.png);
   background-color: #260d30;
@@ -67,10 +68,11 @@
   cursor: pointer;
   border: none;
   padding: 1.5rem 5.5rem;
-  max-width: 25.2rem;
+  max-width: 25.3rem;
   width: 100%;
   background-color: #56106d;
   transition: all 0.5s ease-in-out;
+  border: 0.1rem solid #56106d;
 }
 .header_content-btn:hover {
   background-color: #fff;
@@ -91,12 +93,265 @@
   content: "";
   display: block;
   max-width: 100%;
-  bottom: -28rem;
+  bottom: -46rem;
   right: 24rem;
 }
 
 .services {
   padding: 30rem 0rem 10rem 0rem;
+}
+.services_wrapper {
+  display: flex;
+  gap: 9.6rem;
+  padding: 5rem 0rem;
+}
+.services_wrapper-content {
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+  max-width: 50.4rem;
+  width: 100%;
+}
+.services_wrapper-content-question {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.8rem;
+  color: #56106d;
+}
+.services_wrapper-content--first, .services_wrapper-content--second {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.services_wrapper-content-text {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2.2rem;
+}
+.services_wrapper-offer {
+  max-width: 50rem;
+  width: 100%;
+}
+.services_wrapper-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.services_wrapper-item {
+  height: 7.5rem;
+  border: 0.2rem solid #c4c4c4;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  padding: 2rem 0rem 2rem 2rem;
+  max-width: 45rem;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+}
+.services_wrapper-item:hover {
+  max-width: 50rem;
+  color: #56106d;
+  border: 0.2rem solid #56106d;
+}
+.services_wrapper-item:hover .services_wrapper-item--number {
+  color: #56106d;
+}
+.services_wrapper-item--number {
+  max-width: 3.5rem;
+  transition: all 0.5s ease-in-out;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3.6rem;
+  transform: rotate(-90deg);
+  color: #c4c4c4;
+}
+.services_wrapper-item--text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.services_wrapper-item--name {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2.4rem;
+}
+.services_wrapper-item--descr {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.8rem;
+  color: #2c2b2b;
+}
+.services_title {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3.6rem;
+  position: relative;
+  max-width: 20rem;
+  width: 100%;
+}
+.services_title::after {
+  position: absolute;
+  content: "";
+  width: 8rem;
+  height: 0.2rem;
+  background-color: #2c2b2b;
+  top: 50%;
+  right: -50%;
+}
+.services_btn {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.4rem;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  padding: 1.5rem 5.5rem;
+  max-width: 25.3rem;
+  width: 100%;
+  background-color: #56106d;
+  transition: all 0.5s ease-in-out;
+  border: 0.1rem solid #56106d;
+  position: relative;
+}
+.services_btn:hover {
+  background-color: #fff;
+  color: #56106d;
+}
+.services_btn::after {
+  content: "";
+  position: absolute;
+  width: 8rem;
+  height: 0.2rem;
+  background-color: #c4c4c4;
+  top: 50%;
+  right: -7.5rem;
+}
+.services_btn::before {
+  content: "ЖМИ";
+  color: #c4c4c4;
+  position: absolute;
+  top: 30%;
+  right: -11.5rem;
+}
+
+.whyus {
+  padding-bottom: 10rem;
+}
+.whyus_wrapper {
+  display: flex;
+  gap: 9.5rem;
+}
+.whyus_wrapper-element--img {
+  display: block;
+  width: 100%;
+}
+.whyus_wrapper-content {
+  width: 100%;
+}
+.whyus_wrapper-content--title {
+  position: relative;
+  max-width: 20rem;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3.6rem;
+}
+.whyus_wrapper-content--title::after {
+  position: absolute;
+  content: "";
+  width: 8rem;
+  height: 0.2rem;
+  background-color: #2c2b2b;
+  top: 50%;
+  right: -50%;
+}
+.whyus_wrapper-info {
+  background-color: #56106d;
+  height: 50rem;
+  padding: 2.3rem 0rem 4.5rem 18.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+.whyus_wrapper-info--number {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3.6rem;
+}
+.whyus_wrapper-info--text {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2.4rem;
+}
+.whyus_wrapper-info--descr {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.8rem;
+}
+.whyus_wrapper-info--number, .whyus_wrapper-info--text, .whyus_wrapper-info--descr {
+  color: #fff;
+  max-width: 31.5rem;
+  width: 100%;
+}
+.whyus_wrapper-info--cars, .whyus_wrapper-info--years, .whyus_wrapper-info--trust {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.cars {
+  padding-bottom: 10rem;
+}
+.cars_title {
+  position: relative;
+  max-width: 37rem;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3.6rem;
+  margin-bottom: 5rem;
+}
+.cars_title::after {
+  position: absolute;
+  content: "";
+  width: 8rem;
+  height: 0.2rem;
+  background-color: #2c2b2b;
+  top: 50%;
+  right: -50%;
+}
+.cars_title::after {
+  right: -30%;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 html {

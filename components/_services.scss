@@ -1,7 +1,102 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
 @import "../scss/animations/hover";
+@import "../scss/repeated-components/after-stick";
 
 .services {
   padding: 30rem 0rem 10rem 0rem;
+  &_wrapper {
+    display: flex;
+    gap: 9.6rem;
+    padding: 5rem 0rem;
+    &-content {
+      display: flex;
+      flex-direction: column;
+      gap: 7rem;
+      max-width: 50.4rem;
+      width: 100%;
+      &-question {
+        @include oswald-p;
+        color: $special;
+      }
+      &--first,
+      &--second {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+      }
+      &-text {
+        @include oswald-services;
+      }
+    }
+    &-offer {
+      max-width: 50rem;
+      width: 100%;
+    }
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+    &-item {
+      height: 7.5rem;
+      border: 0.2rem solid $gray;
+      display: flex;
+      align-items: center;
+      gap: 4rem;
+      padding: 2rem 0rem 2rem 2rem;
+      max-width: 45rem;
+      width: 100%;
+      @include list-hover;
+      &:hover &--number {
+        color: $special;
+      }
+      &--number {
+        max-width: 3.5rem;
+        transition: all 0.5s ease-in-out;
+        @include oswald-h1;
+        transform: rotate(-90deg);
+        color: $gray;
+      }
+      &--text {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      &--name {
+        @include oswald-h2;
+      }
+      &--descr {
+        @include oswald-p;
+        color: $black;
+      }
+    }
+  }
+  &_title {
+    @include oswald-h1;
+    position: relative;
+    max-width: 20rem;
+    width: 100%;
+    @include after-stick;
+  }
+  &_btn {
+    @include btn-components;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 8rem;
+      height: 0.2rem;
+      background-color: $gray;
+      top: 50%;
+      right: -7.5rem;
+    }
+    &::before {
+      content: "ЖМИ";
+      color: $gray;
+      position: absolute;
+      top: 30%;
+      right: -11.5rem;
+    }
+  }
 }
