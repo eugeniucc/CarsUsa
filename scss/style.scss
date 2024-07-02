@@ -3,12 +3,16 @@
 @import "../components/services";
 @import "../components/whyus";
 @import "../components/cars";
+@import "../components/contacts";
+@import "../components/footer";
 
 // MEDIA QUERIES
 @import "../media-queries/media-header";
 @import "../media-queries/media-services";
 @import "../media-queries/media-whyus";
 @import "../media-queries/media-cars";
+@import "../media-queries/media-contacts";
+@import "../media-queries/media-footer";
 
 // MIXINS
 @import "../scss/mixins/mixins";

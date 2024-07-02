@@ -14,4 +14,9 @@
   }
 }
 @mixin slider-hover {
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    background-color: $special;
+    color: $white;
+  }
 }

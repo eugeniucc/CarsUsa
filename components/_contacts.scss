@@ -1,0 +1,84 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+@import "../scss/repeated-components/after-stick";
+@import "../scss/btn/btn";
+
+.contacts {
+  &_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &_descr {
+    max-width: 24rem;
+    width: 100%;
+    &-title {
+      @include oswald-h1;
+      position: relative;
+      max-width: 16rem;
+      width: 100%;
+      @include after-stick;
+    }
+    &-list {
+      padding-top: 5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 5rem;
+    }
+    &-text {
+      @include oswald-p;
+      font-size: 2.2rem;
+    }
+    &-span {
+      display: block;
+      color: $special;
+      padding-bottom: 1rem;
+    }
+  }
+  &_content {
+    max-width: 60rem;
+    width: 100%;
+    background-color: $special;
+    padding: 5rem 7.5rem;
+    height: 46rem;
+    &-title {
+      @include oswald-h1;
+      margin-left: 5rem;
+      position: relative;
+      max-width: 25rem;
+      width: 100%;
+      color: $white;
+      @include after-stick;
+      &::after {
+        right: -25%;
+        background-color: $white;
+      }
+    }
+    &-form {
+      padding-top: 1.6rem;
+      max-width: 45rem;
+      width: 100%;
+      text-align: center;
+      &--wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        padding-bottom: 7.8rem;
+      }
+    }
+    &-input {
+      padding: 2.4rem 0rem;
+      text-align: center;
+      @include oswald-p;
+      color: $gray;
+      background-color: $special;
+      border: 0.1rem solid $white;
+      outline: none;
+    }
+    &-btn {
+      @include btn-components;
+      margin: 0 auto;
+      background-color: rgb(113, 11, 113);
+    }
+  }
+}

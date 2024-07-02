@@ -1,6 +1,7 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
 @import "../scss/repeated-components/after-stick";
+@import "../scss/animations/hover";
 
 .cars {
   padding-bottom: 10rem;
@@ -14,4 +15,36 @@
       right: -30%;
     }
   }
+}
+
+.swiper-slide {
+  height: 40rem;
+}
+
+.swiper_cars {
+  display: flex;
+  gap: 1.2rem;
+  &-card {
+    border: 0.1rem solid $gray;
+    padding: 0.5rem 0.5rem 1.5rem 0.5rem;
+    text-align: center;
+    @include slider-hover;
+    &--title {
+      @include oswald-p;
+      padding: 2rem 0rem 0.5rem 0rem;
+    }
+    &--text {
+      @include oswald-p;
+    }
+  }
+}
+
+.swiper-pagination-bullet {
+  border-radius: unset;
+  height: 0.3rem;
+  width: 5rem;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $special;
 }

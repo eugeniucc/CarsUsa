@@ -84,6 +84,7 @@
   gap: 1rem;
   padding: 7rem 0rem 0rem 6.6rem;
   position: relative;
+  max-width: 25rem;
 }
 .header_content-social--links {
   text-decoration: none;
@@ -93,7 +94,7 @@
   content: "";
   display: block;
   max-width: 100%;
-  bottom: -46rem;
+  bottom: -35rem;
   right: 24rem;
 }
 
@@ -348,6 +349,205 @@
 }
 .cars_title::after {
   right: -30%;
+}
+
+.swiper-slide {
+  height: 40rem;
+}
+
+.swiper_cars {
+  display: flex;
+  gap: 1.2rem;
+}
+.swiper_cars-card {
+  border: 0.1rem solid #c4c4c4;
+  padding: 0.5rem 0.5rem 1.5rem 0.5rem;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+}
+.swiper_cars-card:hover {
+  background-color: #56106d;
+  color: #fff;
+}
+.swiper_cars-card--title {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.8rem;
+  padding: 2rem 0rem 0.5rem 0rem;
+}
+.swiper_cars-card--text {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.8rem;
+}
+
+.swiper-pagination-bullet {
+  border-radius: unset;
+  height: 0.3rem;
+  width: 5rem;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #56106d;
+}
+
+.contacts_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contacts_descr {
+  max-width: 24rem;
+  width: 100%;
+}
+.contacts_descr-title {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3.6rem;
+  position: relative;
+  max-width: 16rem;
+  width: 100%;
+}
+.contacts_descr-title::after {
+  position: absolute;
+  content: "";
+  width: 8rem;
+  height: 0.2rem;
+  background-color: #2c2b2b;
+  top: 50%;
+  right: -50%;
+}
+.contacts_descr-list {
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.contacts_descr-text {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.8rem;
+  font-size: 2.2rem;
+}
+.contacts_descr-span {
+  display: block;
+  color: #56106d;
+  padding-bottom: 1rem;
+}
+.contacts_content {
+  max-width: 60rem;
+  width: 100%;
+  background-color: #56106d;
+  padding: 5rem 7.5rem;
+  height: 46rem;
+}
+.contacts_content-title {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3.6rem;
+  margin-left: 5rem;
+  position: relative;
+  max-width: 25rem;
+  width: 100%;
+  color: #fff;
+}
+.contacts_content-title::after {
+  position: absolute;
+  content: "";
+  width: 8rem;
+  height: 0.2rem;
+  background-color: #2c2b2b;
+  top: 50%;
+  right: -50%;
+}
+.contacts_content-title::after {
+  right: -25%;
+  background-color: #fff;
+}
+.contacts_content-form {
+  padding-top: 1.6rem;
+  max-width: 45rem;
+  width: 100%;
+  text-align: center;
+}
+.contacts_content-form--wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding-bottom: 7.8rem;
+}
+.contacts_content-input {
+  padding: 2.4rem 0rem;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.8rem;
+  color: #c4c4c4;
+  background-color: #56106d;
+  border: 0.1rem solid #fff;
+  outline: none;
+}
+.contacts_content-btn {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.4rem;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  padding: 1.5rem 5.5rem;
+  max-width: 25.3rem;
+  width: 100%;
+  background-color: #56106d;
+  transition: all 0.5s ease-in-out;
+  border: 0.1rem solid #56106d;
+  margin: 0 auto;
+  background-color: rgb(113, 11, 113);
+}
+.contacts_content-btn:hover {
+  background-color: #fff;
+  color: #56106d;
+}
+
+.footer {
+  background-color: #56106d;
+  padding: 2.4rem 0rem;
+}
+.footer_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer_logo {
+  display: block;
+}
+.footer_social {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.footer_privacy-policy {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.8rem;
+  color: #fff;
+  text-decoration: none;
 }
 
 * {

@@ -1,0 +1,25 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+.footer {
+  background-color: $special;
+  padding: 2.4rem 0rem;
+  &_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &_logo {
+    display: block;
+  }
+  &_social {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  &_privacy-policy {
+    @include oswald-p;
+    color: $white;
+    text-decoration: none;
+  }
+}
