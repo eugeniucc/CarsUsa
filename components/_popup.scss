@@ -1,0 +1,75 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+@import "../scss/animations/hover";
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  max-width: 45rem;
+  width: 100%;
+  background-color: $special;
+  border-radius: 1.4rem;
+  height: 45rem;
+  border: 0.2rem solid $black;
+  &_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 5rem;
+  }
+  &_text {
+    @include oswald-h1;
+    color: $white;
+    font-size: 2.6rem;
+  }
+  &_input {
+    outline: none;
+    padding: 1.4rem;
+    @include oswald-p;
+    color: $gray;
+    max-width: 30rem;
+    width: 100%;
+  }
+  &_btn {
+    @include oswald-btn;
+    @include btn-components;
+    background-color: #710b71;
+    &-close {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      float: right;
+      padding: 1rem;
+    }
+  }
+}
+
+.showPopup {
+  display: block;
+}
+@media (max-width: 670px) {
+  .popup {
+    height: 40rem;
+    max-width: 40rem;
+    &_wrapper {
+      gap: 3rem;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .popup {
+    height: 40rem;
+    max-width: 30rem;
+    &_wrapper {
+      gap: 3rem;
+    }
+    &_input {
+      width: 80%;
+    }
+  }
+}
