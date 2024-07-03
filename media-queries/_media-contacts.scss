@@ -1,2 +1,85 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
+
+@media (max-width: $breakpoint-xl) {
+  .contacts {
+    padding-left: 1.4rem;
+  }
+}
+@media (max-width: 870px) {
+  .contacts {
+    &_wrapper {
+      gap: 5rem;
+      flex-direction: column;
+    }
+    &_descr {
+      max-width: 60rem;
+      &-list {
+        padding: 5rem 1.4rem 0rem 0rem;
+        flex-direction: unset;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .contacts {
+    padding: 0rem 1.4rem;
+    &_wrapper {
+      gap: 5rem;
+      flex-direction: column;
+    }
+    &_descr {
+      max-width: 60rem;
+      &-list {
+        padding-bottom: 3rem;
+        flex-direction: unset;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+@media (max-width: 542px) {
+  .contacts {
+    &_content {
+      padding: 3rem;
+      height: unset;
+      &-title {
+        margin-left: 0;
+      }
+      &-form {
+        &--wrapper {
+          padding-bottom: 3rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-smL) {
+  .contacts {
+    &_content {
+      &-title {
+        font-size: 2.6rem;
+        &::after {
+          right: 0;
+        }
+      }
+      &-input {
+        padding: 1.4rem 0rem;
+      }
+    }
+  }
+}
+@media (max-width: $breakpoint-smL) {
+  .contacts {
+    &_content {
+      &-title {
+        &::after {
+          width: 5rem;
+          right: 1rem;
+        }
+      }
+    }
+  }
+}

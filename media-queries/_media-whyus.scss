@@ -1,2 +1,69 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
+
+@media (max-width: $breakpoint-xl) {
+  .whyus {
+    padding: 0rem 1.4rem 10rem 1.4rem;
+  }
+}
+@media (max-width: $breakpoint-lg) {
+  .whyus {
+    &_wrapper {
+      gap: 3rem;
+      &-info {
+        padding: 2rem 0rem 4.5rem 2rem;
+      }
+      &-content {
+        &--title {
+          margin: unset;
+        }
+      }
+    }
+  }
+}
+@media (max-width: $breakpoint-md) {
+  .whyuus_wrapper-element--img {
+    display: none;
+  }
+  .whyus {
+    &_wrapper {
+      &-content {
+        &--title {
+          margin: 0 auto;
+        }
+      }
+      &-info {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+}
+@media (max-width: 580px) {
+  .whyus {
+    padding: 0rem 1.4rem 5rem 1.4rem;
+    &_wrapper {
+      gap: 0;
+      &-content {
+        &--title {
+          margin: unset;
+        }
+      }
+      &-info {
+        flex-direction: column;
+        align-items: unset;
+      }
+    }
+  }
+}
+@media (max-width: $breakpoint-smL) {
+  .whyus {
+    &_wrapper {
+      &-info {
+        &--descr {
+          width: 90%;
+        }
+      }
+    }
+  }
+}

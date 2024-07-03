@@ -1,2 +1,29 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
+
+@media (max-width: $breakpoint-xl) {
+  .footer {
+    padding: 2.4rem 1.4rem;
+  }
+}
+@media (max-width: $breakpoint-md) {
+  .footer {
+    padding: 1.4rem 1.4rem;
+  }
+}
+@media (max-width: 640px) {
+  .footer {
+    &_wrapper {
+      flex-direction: column;
+      gap: 3rem;
+    }
+  }
+}
+@media (max-width: 640px) {
+  .footer {
+    &_wrapper {
+      flex-direction: column;
+      gap: 3rem;
+    }
+  }
+}

@@ -1,0 +1,138 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+@media (max-width: $breakpoint-xl) {
+  .services {
+    padding: 30rem 1.4rem 10rem 1.4rem;
+  }
+}
+
+@media (max-width: $breakpoint-lg) {
+  .services {
+    padding: 20rem 1.4rem 10rem 1.4rem;
+    &_wrapper {
+      gap: 5.6rem;
+      &-item {
+        max-width: 40rem;
+      }
+    }
+  }
+}
+@media (max-width: 960px) {
+  .services {
+    &_title {
+      margin: 0 auto;
+    }
+    &_wrapper {
+      flex-direction: column;
+      &-content {
+        max-width: 90%;
+        margin: 0 auto;
+      }
+      &-offer {
+        max-width: 90%;
+        margin: 0 auto;
+      }
+      &-list {
+        align-items: center;
+      }
+      &-item {
+        max-width: 60%;
+        &:hover {
+          max-width: 80%;
+        }
+      }
+    }
+    &_btn {
+      display: flex;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 920px) {
+  .services {
+    padding: 10rem 1.4rem;
+    &_wrapper {
+      &-content {
+        gap: 3rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 635px) {
+  .services {
+    padding: 5rem 1.4rem;
+    &_wrapper {
+      &-item {
+        max-width: 90%;
+        &:hover {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 580px) {
+  .services {
+    &_title {
+      margin: unset;
+    }
+    &_wrapper {
+      &-content {
+        max-width: 100%;
+      }
+      &-offer {
+        max-width: 100%;
+      }
+      &-item {
+        height: 9.5rem;
+        &--descr {
+          width: 90%;
+        }
+      }
+    }
+    &_btn {
+      margin: unset;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-smL) {
+  .services {
+    &_wrapper {
+      &-item {
+        gap: 2rem;
+      }
+      &-content {
+        &-text {
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .services {
+    &_btn {
+      padding: 1.5rem 2.5rem;
+      max-width: 19.3rem;
+    }
+  }
+}
+@media (max-width: 330px) {
+  .services {
+    &_btn {
+      padding: 1.5rem 2.5rem;
+      max-width: 19.3rem;
+      &::after {
+        right: -6.5rem;
+      }
+      &::before {
+        right: -10.5rem;
+      }
+    }
+  }
+}

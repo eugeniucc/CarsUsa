@@ -1,2 +1,82 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
+
+@media (max-width: $breakpoint-xl) {
+  .cars {
+    padding: 0rem 1.4rem 10rem 1.4rem;
+  }
+  // SWIPER CARS
+  .swiper_cars-card:nth-child(3) {
+    display: none;
+  }
+  .swiper_cars {
+    justify-content: space-around;
+  }
+}
+@media (max-width: 830px) {
+  // SWIPER CARS
+  .swiper_cars-card:nth-child(2) {
+    display: none;
+  }
+  .swiper_cars {
+    justify-content: center;
+  }
+}
+@media (max-width: 580px) {
+  .cars {
+    &_title {
+      font-size: 2.6rem;
+      &::after {
+        right: 0;
+      }
+    }
+  }
+}
+@media (max-width: $breakpoint-smL) {
+  // SWIPER CARS
+  .cars {
+    padding: 0rem 1.4rem 5rem 1.4rem;
+    &_title {
+      &::after {
+        width: 6rem;
+      }
+    }
+  }
+  .swiper_cars-card {
+    width: 100%;
+  }
+  .swiper_cars-card--img {
+    display: block;
+    width: 100%;
+  }
+}
+@media (max-width: 360px) {
+  // SWIPER CARS
+  .swiper-slide {
+    height: 35rem;
+  }
+}
+@media (max-width: $breakpoint-smS) {
+  // SWIPER CARS
+  .swiper-slide {
+    height: 32rem;
+  }
+}
+@media (max-width: 354px) {
+  .cars {
+    &_title {
+      &::after {
+        width: 4rem;
+      }
+    }
+  }
+}
+@media (max-width: 334px) {
+  .cars {
+    &_title {
+      &::after {
+        width: 3rem;
+      }
+    }
+  }
+}
