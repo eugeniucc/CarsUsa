@@ -7,18 +7,18 @@ const popupOverlay = document.querySelector(".popup_overlay");
 
 function showModal() {
   popup.classList.add("showPopup");
-  popupOverlay.classList.add("showPopup");
+  popupOverlay.classList.add("showPopupOverlay");
 }
 
 function hideModal() {
   popup.classList.remove("showPopup");
-  popupOverlay.classList.remove("showPopup");
+  popupOverlay.classList.remove("showPopupOverlay");
 }
 
 function hideOnKey(e) {
   if (e.key === "Escape") {
     popup.classList.remove("showPopup");
-    popupOverlay.classList.remove("showPopup");
+    popupOverlay.classList.remove("showPopupOverlay");
   }
 }
 
